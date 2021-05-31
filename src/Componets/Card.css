@@ -1,0 +1,100 @@
+.card_checkLabel {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.card_checkLabel input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+.checkmark {
+  position: absolute;
+  top: 20px;
+  left: 0;
+  height: 20px;
+  width: 20px;
+  border-radius: 5px;
+  border: 2px solid rgb(0, 0, 0, 0.3);
+}
+.card_checkLabel:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+.card_checkLabel input:checked ~ .checkmark {
+  background-color: #2196f3;
+}
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+.card_checkLabel input:checked ~ .checkmark:after {
+  display: block;
+}
+.card_checkLabel .checkmark:after {
+  left: 6px;
+  top: 2.5px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+.card_main {
+  background-color: #fff;
+  box-shadow: 0px 0px 4px rgba(17, 26, 41, 0.4);
+  margin-left: 50px;
+}
+.card_mainText {
+  font-size: 14px;
+  color: gray;
+  padding: 10px 20px;
+}
+.card_mainDrop {
+  display: flex;
+  margin-top: 30px;
+  padding: 0px 20px;
+}
+.card_mainDropButton {
+  background-color: #f6f6f6;
+  border: none;
+  margin-top: 12px;
+  height: 22px;
+  border-radius: 3px;
+}
+.card_mainDropButtonIcon {
+  margin-bottom: -3px;
+}
+.card_mainDropNo {
+  font-size: 12px;
+  margin-left: 10px;
+  border: 1px solid gray;
+  color: gray;
+  border-radius: 3px;
+  padding: 2px 15px;
+}
+.card_mainBottom {
+  display: flex;
+  justify-content: space-between;
+}
+.card_mainBottomLeftImg {
+  width: auto;
+  height: 18px;
+  margin-left: 20px;
+}
+.card_mainBottomRightImg {
+  width: auto;
+  height: 18px;
+  margin-right: 20px;
+}

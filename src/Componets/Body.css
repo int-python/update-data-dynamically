@@ -1,0 +1,157 @@
+.body {
+  margin: 20px 0;
+  display: flex;
+  background-color: #f6f6f6;
+}
+
+.side-menu {
+  height: 100%;
+  padding: 50px;
+  box-sizing: border-box;
+  background-color: #fff;
+  border-radius: 8px;
+  display: flex;
+  flex-flow: column nowrap;
+  box-shadow: 0px 0px 4px rgba(17, 26, 41, 0.4);
+  position: relative;
+  padding: 0 30px;
+
+  transition: 0.5s;
+}
+.side-menu label {
+  position: absolute;
+  width: 40px;
+  height: 80px;
+  background-color: #fff;
+  box-shadow: 0px 0px 4px rgba(17, 26, 41, 0.4);
+  clip-path: inset(-10px -10px -10px 0px);
+  color: #f68a06;
+  right: -40px;
+  /* top: 0; */
+  bottom: 10px;
+  margin: auto;
+  line-height: 80px;
+  text-align: center;
+  font-size: 30px;
+  border-radius: 0 10px 10px 0;
+}
+#side-menu-switch {
+  position: absolute;
+  opacity: 0;
+}
+#side-menu-switch:checked + .side-menu {
+  width: 50%;
+}
+.side-menuClose {
+  display: none;
+  height: 523px;
+}
+.side-menuCloseText {
+  display: flex;
+  color: #002173;
+  margin-top: 250px;
+  font-size: 20px;
+  font-weight: 700;
+  transform: rotateZ(-90deg);
+}
+
+#side-menu-switch:checked + .side-menu .side-menuOpen {
+  display: none;
+}
+#side-menu-switch:checked + .side-menu .side-menuClose {
+  display: block;
+}
+#side-menu-switch:checked + .side-menu label .side-menu-switchIcon {
+  transform: scaleX(-1);
+}
+.side-menuHead {
+  display: flex;
+  justify-content: space-between;
+  place-items: center;
+}
+.side-menuHeadText {
+  font-size: 20px;
+  font-weight: 700;
+  color: #002173;
+}
+.side-menuHeadImg {
+  width: 40px;
+  height: 40px;
+}
+.cutomTextarea {
+  resize: none;
+  width: 95%;
+  height: 150px;
+  border-radius: 12px;
+  border: 1px solid gray;
+  padding-left: 20px;
+  padding-top: 20px;
+}
+.content_length {
+  margin-top: -30px;
+  margin-left: 440px;
+  color: gray;
+}
+.side-menuOpenInGrp {
+  margin-top: 50px;
+}
+.side-menuOpenInput {
+  width: 85%;
+  height: 40px;
+  border-radius: 10px;
+  border: 1px solid gray;
+  font-size: 14px;
+  color: gray;
+  padding: 0 20px;
+  margin-top: 30px;
+}
+.side-menuOpenInputImg {
+  width: 30px;
+  height: 30px;
+  margin-left: 5px;
+  margin-bottom: -10px;
+}
+.side-menuOpenButton {
+  cursor: pointer;
+  border: transparent;
+  background-color: #f68a06;
+  border-radius: 5px;
+  padding: 8px 30px;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 600;
+  margin: 20px 0 20px 200px;
+}
+.right {
+  flex: 1;
+  padding-top: 15px;
+}
+.right_header {
+  display: flex;
+  justify-content: space-between;
+}
+.right_headerLeftCheckboxLabel {
+  color: gray;
+  margin-right: 10px;
+  margin-left: 20px;
+}
+
+.right_headerRight {
+  display: flex;
+}
+.right_headerRightImg {
+  margin-right: 20px;
+  width: auto;
+  height: 16px;
+}
+.right_headerRightVerticalLine {
+  height: 18px;
+  margin-right: 20px;
+  border-left: 1px solid gray;
+}
+.right_body {
+  overflow-y: scroll;
+  height: 65vh;
+  padding: 20px 50px;
+  margin-bottom: 20px;
+}

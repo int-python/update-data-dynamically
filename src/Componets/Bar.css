@@ -1,0 +1,30 @@
+.bar {
+  background-color: #eee;
+  border-radius: 10px;
+  position: relative;
+  margin-top: -5px;
+  height: 100%;
+  width: 100%;
+}
+.bar_done {
+  background-color: #f68a06;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  height: 14px;
+  width: 0;
+  opacity: 0;
+  transition: 1s lining 0.3s;
+}
+.bar_doneData {
+  color: #fff;
+  font-size: 11px;
+  padding-right: 10px;
+}
+.datatype {
+  float: right;
+  color: #f68a06;
+  margin-top: 0px;
+  margin-right: 10px;
+}
